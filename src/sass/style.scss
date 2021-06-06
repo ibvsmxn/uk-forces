@@ -1,16 +1,189 @@
 $theme-colors: (
     "primary": blue,
-    "dark": #000000
+    "dark": #000000,
+    "red" : #ba1d0a
 );
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
 body {
-    padding-top:56px;
+    font-family: 'Poppins', sans-serif;
+
+    &.scroll {
+        nav {
+            background: black;
+            transition: 0.5s all ease;
+
+            img {
+                max-height: 35px;
+                transition: 0.5s all ease;
+            }
+        }
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+    }
+
+    .welcome-section {
+        height: 80vh;
+        text-align: left;
+
+        video {
+            width: 100%;
+            object-fit: cover;
+            left: 0;
+            height: 80VH;
+        }
+
+        .overlay {
+            height: 80VH;
+            width: 100%;
+            padding: 50px;
+            background: rgba(0,0,0,0.75);
+            display: flex;
+            align-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 10;
+            color: white;
+
+            h2.leading {
+                font-size: 5em;
+                width: 75%;
+                font-weight: 700;
+                margin-top: 50px;
+
+                span {
+                    color: $red;
+                }
+
+            }
+
+            h3 {
+                font-size: 3em;
+                margin-top: 0.5em;
+            }
+
+            .cta {
+                background: transparent;
+                border: 3px solid white;
+                color: white;
+                padding: 20px;
+                border-radius: 50px;
+                font-size: 1.25em;
+                width: 250px;
+                margin-top: 2em;
+                text-transform: uppercase;
+                transition: 0.5s all ease;
+
+                &:hover {
+                    border-color: $red;
+                    background: $red;
+                    transition: 0.3s all ease;
+                }
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 80VH;
+                background: #888888a3;
+                background: rgb(255,255,255);
+                background: linear-gradient(329deg,rgba(186, 29, 10, 0.3)  0%,rgba(255,255,255,0.25) 100%);
+                mix-blend-mode: hard-light;
+                z-index: -1;
+            }
+        }
+    }
+
+    section {
+        .jumbotron {
+            padding: 100px;
+
+            p {
+                width: 75%;
+                margin: 0 auto;
+                line-height: 2em;
+            }
+        }
+        &.threat-level {
+            background: rgb(15, 15, 15);
+            color: white;
+            text-align: left;
+            padding: 50px;
+            font-size: 2em;
+
+            @keyframes pulse {
+                0% {color: $red; border-color: $red;}
+                50% {color: white; border-color: white}
+                100% {color: $red; border-color: $red}
+            }
+
+            p {
+                i {
+                    margin-right: 0.5em;
+                }
+                span.exclaim {
+                    color: $red;
+                    border-bottom: 3px solid $red;
+                    animation: pulse 2.5s infinite;
+                }
+            }
+        }
+        &.why-choose-us {
+            background: #0a0a0a;
+            border-radius: 25px;
+            padding-bottom: 50px;
+        
+            ul {
+                li {
+                    list-style: none;
+                    padding: 30px;
+                    background: black;
+                    color: white;
+                    border-radius: 50px;
+                    font-size: 20px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
 }
 .footer {
     margin-top:3rem;
 }
 .navbar {
-    border-bottom:1px solid #eee;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    background: transparent;
+    transition: 0.5s all ease;
+
+    .navbar-brand {
+        font-size: 1.25em;
+        font-weight: bolder;
+    }
+
+    img {
+        max-height: 75px;
+        margin-right: 10px;
+        filter: brightness(15)saturate(0);
+        transition: 0.5s all ease;
+    }
+
+    .navbar-collapse {
+        flex-grow: 0;
+    }
+
+    li {
+        a {
+            color: black;
+        }
+    }
 }
