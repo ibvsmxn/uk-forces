@@ -17,84 +17,155 @@
     </head>
     
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top">
+        <nav class="navbar navbar-dark bg-light fixed-top">
             <div class="container"> <a class="navbar-brand" href="./"><img src="/img/logo-small.png">UK Force Services</a>
 
                 <button
-                class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+                id="menuToggle" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">Menu
+                    <div class="decor"> <span class="line"></span>
+ <span class="line"></span>
 
+                    </div>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <!-- <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./">Home</a>
-                </li> -->
-                            <li class="nav-item"> <a class="nav-link" href="./about.html">About</a>
+                        <div class="container">
+                            <ul class="navbar-nav col-12 col-lg-6">
+                                <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./">Home</a>
+                    </li> -->
+                                <li class="nav-item"> <a class="nav-link" href="./about.html">About</a>
 
-                            </li>
-                            <li class="nav-item"> <a class="nav-link" href="#">Security</a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="./security.html">Security</a>
 
-                            </li>
-                            <li class="nav-item"> <a class="nav-link" href="#">Response</a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Response</a>
 
-                            </li>
-                            <li class="nav-item"> <a class="nav-link" href="#">Security</a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Vehicle Security</a>
 
-                            </li>
-                            <li class="nav-item"> <a class="nav-link" href="#">Vehicle Security</a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Covid-19</a>
 
-                            </li>
-                            <li class="nav-item"> <a class="nav-link" href="#">Covid-19</a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Training</a>
 
-                            </li>
-                            <li class="nav-item"> <a class="nav-link" href="#">Training</a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Join Us</a>
 
-                            </li>
-                            <li class="nav-item"> <a class="nav-link" href="#">Join Us</a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" href="#">Blog</a>
 
-                            </li>
-                            <li class="nav-item"> <a class="nav-link" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a> -->
+                                    <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul> -->
+                                </li>
+                                <hr>
+                                <li class="nav-item"> <a class="nav-link login" href="http://theukforce.co.uk/ukforce/">Portal Login</a>
 
-                            </li>
-                            <li class="nav-item dropdown">
-                                <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a> -->
-                                <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul> -->
-                            </li>
-                        </ul>
+                                </li>
+                            </ul>
+                            <!-- <ul class="col-12 col-lg-5 offset-md-1">
+                    <h4>Call us</h4>
+                    <p>020 3355 0063</p>
+                </ul> -->
+                        </div>
                     </div>
             </div>
         </nav>
-        <div class="jumbotron pt-5 pb-5 bg-white text-center justify-content-center align-items-center mb-0">
-            <div class="container">
-                 <h1 class="display-3">About</h1>
+        <main class="inner-page">
+            <div class="jumbotron justify-content-center align-items-center leading"
+            style="background-image: url(img/london-eye-2.jpg); background-attachment: fixed;">
+                <div class="container">
+                     <h1 class="inner-page-title">About</h1>
 
-                <p class="lead">Basic5 is a responsive A Bootstrap 5 Boilerplate with Gulp, Sass, BrowserSync.</p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579032365451-d20e00c0ed23?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-                </div>
-                <div class="col-md-4">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579032365437-9f9d275b0db0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-                </div>
-                <div class="col-md-4">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579033060982-1bb5b083f4fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
                 </div>
             </div>
-        </div>
-        <footer class="footer container text-center">
-            <p>&copy; Bootstrap Basic5 Starter with Gulp</p>
+            <section>
+                <div class="jumbotron text-section">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                             <h2>We deliver <span>premium security solutions</span> at the <span>best price</span></h2>
+
+                            <p>The formation of UK Force Service by a group of senior industry executives,
+                                is in direct response to the increasing market need for a professional-manned
+                                guarding company, which has a clear appreciation of customer requirements
+                                with a focus on providing a high-quality man-guarding operation, at an
+                                affordable cost.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="jumbotron text-section" style="background: #dcdcdc;">
+                    <div class="row">
+                        <div class="col-12 col-md-5">
+                             <h2><span>Exceptional </span>Security</h2>
+
+                            <p class="lead">Wіth mоrе thаn 15 уеаrѕ оf еxреrіеnсе, wе аt Uk Force Services еnѕurе
+                                thаt ѕаfеtу іѕ оur tор рrіоrіtу аnd thіѕ іѕ thе mаjоr bаѕіѕ fоr рrоvіdіng
+                                еxсерtіоnаl ѕесurіtу ѕеrvісеѕ tо оur сlіеntѕ.</p>
+                        </div>
+                        <div class="col-12 col-md-5 offset-md-1">
+                             <h2><span>Reliable </span>& committed</h2>
+
+                            <p class="lead">Aѕ Uk Force Services іѕ соmmіttеd tо рrоtесtіng уоur lіfе аnd рrореrtіеѕ,
+                                wе rесruіt еxреrіеnсеd ѕесurіtу оffісеrѕ, buіldіng ѕесurіtу guаrdѕ whісh
+                                mаkеѕ uѕ оnе оf thе mоѕt rеlіаblе ѕесurіtу соmраnіеѕ.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="jumbotron text-section">
+                    <div class="row">
+                        <div class="col-12 col-md-6 offset-md-6">
+                             <h2>We deliver <span>premium security solutions</span> at the <span>best price</span></h2>
+
+                            <p>The formation of UK Force Service by a group of senior industry executives,
+                                is in direct response to the increasing market need for a professional-manned
+                                guarding company, which has a clear appreciation of customer requirements
+                                with a focus on providing a high-quality man-guarding operation, at an
+                                affordable cost.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="call-section bgd-black" style="background-image: url('/img/london-clouds.jpg');">
+                <div class="inner-content" style="background-color: rgba(80,80,80,1);">
+                    <div class="col-12 col-md-5 offset-md-6">
+                         <h3>Want to be a part of our team?</h3>
+
+                        <!-- <h4>You can also email us for a FREE Estimate , We usually reply within 48 hours.</h4> --> <a href="tel:+442033550063" class="btn btn-primary cta">020 3355 0063</a>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12"> <a class="navbar-brand" href="./"><img src="/img/logo-small.png">UK Force Services</a>
+
+                        <BR>
+                        <!-- <p>The formation of UK Force Services by a group of senior industry executives, is in direct response to the increasing market need for a professional-manned guarding company.</p> -->
+                    </div>
+                </div>
+                <p>&copy; <span id="copyYear">2022</span> UK Force Services Limited by <a href="http://www.dxndre.co.uk">D'André Phillips</a>
+
+                </p>
+            </div>
         </footer>
         <script src="./js/all.js"></script>
     </body>
